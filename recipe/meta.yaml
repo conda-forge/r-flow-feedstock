@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flow/flow_{{ version }}.tar.gz
-  sha256: e9d3866b4f5520418e97d996e12695b775dcfb81a9c07b20ecb410726fd32c9c
+  sha256: e69533790022a62923454bf7b82916f4482958b2baaf1b4db469afcf97e800e3
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,9 +50,7 @@ about:
   home: https://moodymudskipper.github.io/flow/
   dev_url: https://github.com/moodymudskipper/flow
   license: MIT
-  summary: Visualize as flow diagrams the logic of functions, expressions or scripts in a static
-    way or when running a call, visualize the dependencies between functions or between
-    modules in a shiny app, and more.
+  summary: Visualize as flow diagrams the logic of functions, expressions or scripts in a static way or when running a call, visualize the dependencies between functions or between modules in a shiny app, and more.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
